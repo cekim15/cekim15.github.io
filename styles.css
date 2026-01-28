@@ -92,3 +92,24 @@
 .project-description {
     margin-top: 10px;
 }
+
+.tag {
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 12px;
+    padding: 4px 10px;
+    font-size: 0.8em;
+    margin-right: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.tag:hover {
+    background-color: #ddd;
+    transform: translateY(-1px);
+}
+
+.active-tag {
+    background-color: #cce4ff;
+    font-weight: bold;
+}
