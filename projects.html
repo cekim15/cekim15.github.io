@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-right">
+            <a href="index.html">Home</a>
+            <a class="active" href="projects.html">Projects</a>
+        </div>
+    </div>
+
+    <h1>Projects</h1>
+
+    <div class="filters">
+        <button onclick="filterProjects('all')">All</button>
+        <button onclick="filterProjects('frontend')">Frontend</button>
+        <button onclick="filterProjects('fullstack')">Full Stack</button>
+        <button onclick="filterProjects('backend')">Backend</button>
+    </div>
+
+    <ul class="projects">
+        <li class="project" data-tags="frontend">
+            <a href="[Project Link]" target="_blank">blah blah</a>
+            <p>Frontend website using HTML/CSS</p>
+        </li>
+
+        <li class="project" data-tags="frontend fullstack">
+            <a href="[Project Link]" target="_blank">bleh bleh</a>
+            <p>Full-stack app with React + Firebase</p>
+        </li>
+
+        <li class="project" data-tags="backend">
+            <a href="[Project Link]" target="_blank">cry cry cry</a>
+            <p>API built with Node.js</p>
+        </li>
+    </ul>
+
+    <script src="projects.js"></script>
+</body>
+</html>

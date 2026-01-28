@@ -1,11 +1,13 @@
 .header {
+    font-family: Sniglet;
+    font-size: 24px;
     overflow: hidden;
     background-color: #aec8e6;
     padding: 20px 10px;
 }
 
 .header a {
-    float: left;
+    float: right;
     color: black;
     text-align: center;
     padding: 12px;
@@ -27,4 +29,66 @@
 
 .header-right {
     float: right;
+}
+
+/* Filters */
+.filters {
+    margin-bottom: 20px;
+}
+
+.filters button {
+    margin-right: 8px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background-color: #ddd;
+}
+
+/* Scrollable container */
+.projects-container {
+    max-height: 70vh; /* scrolls instead of entire page */
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* Project card */
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+/* Title + date */
+.project-title {
+    margin: 0;
+}
+
+.project-date {
+    font-size: 0.9em;
+    color: gray;
+    margin-bottom: 8px;
+}
+
+/* Tags */
+.project-tags {
+    margin-bottom: 8px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 12px;
+    padding: 4px 10px;
+    font-size: 0.8em;
+    margin-right: 6px;
+}
+
+/* Description */
+.project-description {
+    margin-top: 10px;
 }
