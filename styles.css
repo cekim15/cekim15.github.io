@@ -1,3 +1,9 @@
+.body {
+    font-family: Sniglet, system-ui;
+    font-weight: 400;
+}
+
+
 .header {
     font-family: Sniglet;
     font-size: 24px;
@@ -31,7 +37,10 @@
     float: right;
 }
 
-/* Filters */
+.name {
+    font-weight: 800;
+}
+
 .filters {
     margin-bottom: 20px;
 }
@@ -112,16 +121,4 @@
 .active-tag {
     background-color: #cce4ff;
     font-weight: bold;
-}
-
-.sniglet-regular {
-  font-family: "Sniglet", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.sniglet-extrabold {
-  font-family: "Sniglet", system-ui;
-  font-weight: 800;
-  font-style: normal;
 }
