@@ -3,7 +3,9 @@
 <head>
     <title>Projects</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Sniglet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -15,50 +17,60 @@
         </div>
     </div>
 
-    <h1>Projects</h1>
-
-    <div class="filters">
-        <button onclick="filterProjects('all')">All</button>
-        <button onclick="filterProjects('frontend')">Frontend</button>
-        <button onclick="filterProjects('fullstack')">Full Stack</button>
-        <button onclick="filterProjects('backend')">Backend</button>
-    </div>
-
-    <div class="project-card" data-tags="frontend fullstack">
-        <h2 class="project-title">USC Tree Hole</h2>
-        <p class="project-date">Aug 2024 – Present</p>
+    <div class="project-card" data-tags="webdesign fullstack">
+        <h2 class="project-title">Team Hearing</h2>
+        <p class="project-date">Aug 2025 – Dec 2025</p>
 
         <div class="project-tags">
-            <span class="tag" onclick="filterProjects('frontend')">Frontend</span>
-            <span class="tag" onclick="filterProjects('fullstack')">Full Stack</span>
+            <span class="tag" onclick="filterProjects('webdesign')">web design</span>
+            <span class="tag" onclick="filterProjects('fullstack')">full stack</span>
+        </div>
+
+        <p><strong>Languages:</strong> Java, Typescript, SQL</p>
+        <p><strong>Tools / Frameworks:</strong> d3.js, React, Springboot, Git</p>
+
+        <p class="project-description">
+            For this project, a team and I worked with USC’s Bionic Ear Lab as a full stack developer
+            building a web-based application for assessing music
+            perception in cochlear implant users via training modules to be used in peer-reviewed studies.
+            Developed a database schema to store users, devices, and test results
+        </p>
+    </div>
+
+    <div class="project-card" data-tags="appdev mobile android fullstack">
+        <h2 class="project-title">USC Tree Hole</h2>
+        <p class="project-date">Oct 2024 – Dec 2024</p>
+
+        <div class="project-tags">
+            <span class="tag" onclick="filterProjects('appdev')">app development</span>
+            <span class="tag" onclick="filterProjects('mobile')">mobile</span>
+            <span class="tag" onclick="filterProjects('android')">Android</span>
+            <span class="tag" onclick="filterProjects('fullstack')">full stack</span>
         </div>
 
         <p><strong>Languages:</strong> Java, XML</p>
-        <p><strong>Tools / Frameworks:</strong> Android Studio, Firebase</p>
+        <p><strong>Tools / Frameworks:</strong> Android Studio, Firebase, JUnit, Espresso, Git</p>
 
         <p class="project-description">
             Anonymous discussion platform for USC students.
         </p>
     </div>
 
+    <div class="project-card" data-tags="machine learning">
+        <h2 class="project-title">Tumor Classification</h2>
+        <p class="project-date">Nov 2024</p>
 
-    <ul class="projects">
-        
-        <li class="project" data-tags="frontend">
-            <a href="[Project Link]" target="_blank">blah blah</a>
-            <p>Frontend website using HTML/CSS</p>
-        </li>
+        <div class="project-tags">
+            <span class="tag" onclick="filterProjects('machinelearning')">machine learning</span>
+        </div>
 
-        <li class="project" data-tags="frontend fullstack">
-            <a href="[Project Link]" target="_blank">bleh bleh</a>
-            <p>Full-stack app with React + Firebase</p>
-        </li>
+        <p><strong>Languages:</strong> Python</p>
+        <p><strong>Tools / Frameworks:</strong> scikit-learn</p>
 
-        <li class="project" data-tags="backend">
-            <a href="[Project Link]" target="_blank">cry cry cry</a>
-            <p>API built with Node.js</p>
-        </li>
-    </ul>
+        <p class="project-description">
+            Anonymous discussion platform for USC students.
+        </p>
+    </div>
 
     <script src="projects.js"></script>
 </body>

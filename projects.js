@@ -3,7 +3,6 @@ let activeTag = "all";
 function filterProjects(tag) {
     const projects = document.querySelectorAll('.project-card');
 
-    // Toggle off if clicking the same tag again
     if (activeTag === tag) {
         activeTag = "all";
     } else {
