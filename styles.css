@@ -23,6 +23,7 @@ body {
     font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
+    font-family: Quicksand, system-ui;
 }
 
 .header a.logo {
@@ -41,7 +42,8 @@ body {
 }
 
 .name {
-    font-weight: 800;
+    font-weight: 700;
+    font-family: Quicksand, system-ui;
 }
 
 .filters {
@@ -52,15 +54,21 @@ body {
 }
 
 .filters button {
-    margin-right: 8px;
-    padding: 6px 12px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 12px;
+    padding: 4px 10px;
+    font-size: 0.8em;
+    margin-right: 6px;
     border: none;
-    border-radius: 6px;
     cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    font-family: Quicksand, system-ui;
 }
 
 .filters button:hover {
     background-color: #ddd;
+    transform: translateY(-1px);
 }
 
 /* Scrollable container */
