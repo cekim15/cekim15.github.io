@@ -26,7 +26,7 @@ function updateActiveTags() {
     const allTags = document.querySelectorAll('.tag');
 
     allTags.forEach(tagEl => {
-        if (tagEl.textContent.toLowerCase().replace(" ", "") === activeTag) {
+        if (tagEl.dataset.value === activeTag) {
             tagEl.classList.add("active-tag");
         } else {
             tagEl.classList.remove("active-tag");
