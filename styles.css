@@ -7,15 +7,15 @@ body {
 .header {
     font-family: Quicksand;
     font-size: 24px;
-    display: flex;
-    justify-content: flex-end;
     background-color: #aec8e6;
     padding: 20px 10px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 .header a {
-    float: right;
     color: black;
     text-align: center;
     padding: 12px;
@@ -36,9 +36,14 @@ body {
     color: black;
 }
 
+.header a.active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 .header-right {
     display: flex;
     gap: 10px;
+    flex-direction: row-reverse;
 }
 
 .name {
@@ -55,12 +60,11 @@ body {
 
 .filter-label {
     display: inline-block;
-    background-color: #cce4ff;
+    background-color: #eee;
     border-radius: 12px;
     padding: 4px 10px;
     font-size: 0.8em;
     margin-right: 6px;
-    font-weight: bold;
     font-family: Quicksand, system-ui;
 }
 
@@ -80,6 +84,11 @@ body {
 .filters button:hover {
     background-color: #ddd;
     transform: translateY(-1px);
+}
+
+.filters button.active {
+    background-color: #cce4ff;
+    font-weight: bold;
 }
 
 /* Scrollable container */

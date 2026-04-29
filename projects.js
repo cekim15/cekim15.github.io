@@ -24,12 +24,22 @@ function filterProjects(tag) {
 
 function updateActiveTags() {
     const allTags = document.querySelectorAll('.tag');
+    const allButtons = document.querySelectorAll('.filters button');
 
     allTags.forEach(tagEl => {
         if (tagEl.dataset.value === activeTag) {
             tagEl.classList.add("active-tag");
         } else {
             tagEl.classList.remove("active-tag");
+        }
+    });
+
+    allButtons.forEach(buttonEl => {
+        const buttonValue = buttonEl.textContent.toLowerCase().replace(/\s+/g, '');
+        if (buttonValue === activeTag) {
+            buttonEl.classList.add("active");
+        } else {
+            buttonEl.classList.remove("active");
         }
     });
 }
