@@ -53,6 +53,17 @@ body {
     box-sizing: border-box;
 }
 
+.filter-label {
+    display: inline-block;
+    background-color: #cce4ff;
+    border-radius: 12px;
+    padding: 4px 10px;
+    font-size: 0.8em;
+    margin-right: 6px;
+    font-weight: bold;
+    font-family: Quicksand, system-ui;
+}
+
 .filters button {
     display: inline-block;
     background-color: #eee;
