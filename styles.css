@@ -7,9 +7,11 @@ body {
 .header {
     font-family: Sniglet;
     font-size: 24px;
-    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
     background-color: #aec8e6;
     padding: 20px 10px;
+    box-sizing: border-box;
 }
 
 .header a {
@@ -34,7 +36,8 @@ body {
 }
 
 .header-right {
-    float: right;
+    display: flex;
+    gap: 10px;
 }
 
 .name {
@@ -42,7 +45,10 @@ body {
 }
 
 .filters {
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .filters button {
@@ -95,22 +101,14 @@ body {
     padding: 4px 10px;
     font-size: 0.8em;
     margin-right: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    box-sizing: border-box;
 }
 
 /* Description */
 .project-description {
     margin-top: 10px;
-}
-
-.tag {
-    display: inline-block;
-    background-color: #eee;
-    border-radius: 12px;
-    padding: 4px 10px;
-    font-size: 0.8em;
-    margin-right: 6px;
-    cursor: pointer;
-    transition: background-color 0.2s, transform 0.1s;
 }
 
 .tag:hover {
