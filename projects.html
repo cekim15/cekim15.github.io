@@ -26,6 +26,8 @@
         <button onclick="filterProjects('mobile')">mobile</button>
         <button onclick="filterProjects('android')">Android</button>
         <button onclick="filterProjects('machinelearning')">machine learning</button>
+        <button onclick="filterProjects('games')">games</button>
+        <button onclick="filterProjects('microcontrollers')">games</button>
     </div>
 
     <div class="sort-controls">
@@ -43,6 +45,16 @@
             <span class="tag" data-value="webdesign" onclick="filterProjects('webdesign')">web design</span>
             <span class="tag" data-value="fullstack" onclick="filterProjects('fullstack')">full stack</span>
         </div>
+
+        <!-- Optional: Add project image -->
+        <!-- <div class="project-image">
+            <img src="path/to/image.jpg" alt="Team Hearing screenshot">
+        </div> -->
+
+        <!-- Optional: Add YouTube video -->
+        <!-- <div class="project-media">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+        </div> -->
 
         <p><strong>Languages:</strong> Java, Typescript, SQL</p>
         <p><strong>Tools / Frameworks:</strong> d3.js, React, Springboot, Git</p>
@@ -66,6 +78,16 @@
             <span class="tag" data-value="fullstack" onclick="filterProjects('fullstack')">full stack</span>
         </div>
 
+        <!-- Optional: Add project image -->
+        <!-- <div class="project-image">
+            <img src="path/to/image.jpg" alt="USC Tree Hole screenshot">
+        </div> -->
+
+        <!-- Optional: Add YouTube video -->
+        <!-- <div class="project-media">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+        </div> -->
+
         <p><strong>Languages:</strong> Java, XML</p>
         <p><strong>Tools / Frameworks:</strong> Android Studio, Firebase, JUnit, Espresso, Git</p>
 
@@ -82,6 +104,16 @@
             <span class="tag" data-value="machinelearning" onclick="filterProjects('machinelearning')">machine learning</span>
         </div>
 
+        <!-- Optional: Add project image -->
+        <!-- <div class="project-image">
+            <img src="path/to/image.jpg" alt="Tumor Classification visualization">
+        </div> -->
+
+        <!-- Optional: Add YouTube video -->
+        <!-- <div class="project-media">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+        </div> -->
+
         <p><strong>Languages:</strong> Python</p>
         <p><strong>Tools / Frameworks:</strong> scikit-learn</p>
 
@@ -89,6 +121,60 @@
             Anonymous discussion platform for USC students.
         </p>
     </div>
+    
+    <div class="project-card" data-tags="games">
+        <h2 class="project-title">Portal</h2>
+        <p class="project-date">Mar 2026 – Apr 2026</p>
+
+        <div class="project-tags">
+            <span class="tag" data-value="games" onclick="filterProjects('games')">games</span>
+        </div>
+
+        <!-- Optional: Add project image -->
+        <!-- <div class="project-image">
+            <img src="path/to/image.jpg" alt="Team Hearing screenshot">
+        </div> -->
+
+        <!-- Optional: Add YouTube video -->
+        <!-- <div class="project-media">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+        </div> -->
+
+        <p><strong>Languages:</strong> C++ </p>
+        <p><strong>Tools / Frameworks:</strong> ughhh</p>
+
+        <p class="project-description">
+            Portal
+        </p>
+    </div>
+
+    <div class="project-card" data-tags="microcontrollers">
+        <h2 class="project-title">Tomato Car</h2>
+        <p class="project-date">Mar 2026</p>
+
+        <div class="project-tags">
+            <span class="tag" data-value="microcontrollers" onclick="filterProjects('microcontrollers')">microcontrollers</span>
+        </div>
+
+        <!-- Optional: Add project image -->
+        <!-- <div class="project-image">
+            <img src="path/to/image.jpg" alt="Team Hearing screenshot">
+        </div> -->
+
+        <!-- Optional: Add YouTube video -->
+        <div class="project-media">
+            <iframe src="https://youtube.com/shorts/VQXI6DczweY?si=_5In9Pjel1xOrJvP" allowfullscreen></iframe>
+        </div> -->
+
+        <p><strong>Languages:</strong> C++ </p>
+        <p><strong>Tools / Frameworks:</strong> Bluefruit </p>
+
+        <p class="project-description">
+            A remote control car.
+        </p>
+    </div>
+    
+
     </div>
 
     <script src="projects.js"></script>

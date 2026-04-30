@@ -160,7 +160,7 @@ body {
 
 /* Tags */
 .project-tags {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .tag {
@@ -173,6 +173,36 @@ body {
     cursor: pointer;
     transition: background-color 0.2s, transform 0.1s;
     box-sizing: border-box;
+}
+
+/* Project image */
+.project-image {
+    margin: 12px 0;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Project media (YouTube embeds) */
+.project-media {
+    margin: 12px 0;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.project-media iframe {
+    width: 100%;
+    height: 280px;
+    border: none;
+    border-radius: 8px;
 }
 
 /* Description */
