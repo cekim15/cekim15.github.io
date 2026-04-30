@@ -92,6 +92,46 @@ body {
     font-weight: bold;
 }
 
+.sort-controls {
+    margin-bottom: 30px;
+    padding: 20px;
+    padding-top: 0;
+    box-sizing: border-box;
+}
+
+.sort-label {
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 12px;
+    padding: 4px 10px;
+    font-size: 0.8em;
+    margin-right: 6px;
+    font-family: Quicksand, system-ui;
+}
+
+.sort-btn {
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 12px;
+    padding: 4px 10px;
+    font-size: 0.8em;
+    margin-right: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    font-family: Quicksand, system-ui;
+}
+
+.sort-btn:hover {
+    background-color: #ddd;
+    transform: translateY(-1px);
+}
+
+.sort-btn.active {
+    background-color: #cce4ff;
+    font-weight: bold;
+}
+
 /* Scrollable container */
 .projects-container {
     max-height: 70vh; /* scrolls instead of entire page */

@@ -28,6 +28,12 @@
         <button onclick="filterProjects('machinelearning')">machine learning</button>
     </div>
 
+    <div class="sort-controls">
+        <span class="sort-label">Sort:</span>
+        <button onclick="sortProjects('newest')" id="sort-newest" class="sort-btn active">newest to oldest</button>
+        <button onclick="sortProjects('oldest')" id="sort-oldest" class="sort-btn">oldest to newest</button>
+    </div>
+
     <div class="projects-container">
     <div class="project-card" data-tags="webdesign fullstack">
         <h2 class="project-title">Team Hearing</h2>
