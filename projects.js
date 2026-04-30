@@ -92,7 +92,7 @@ function updateActiveTags() {
     });
 
     allButtons.forEach(buttonEl => {
-        const buttonValue = buttonEl.textContent.toLowerCase().replace(/\s+/g, '');
+        const buttonValue = buttonEl.dataset.value;
         if (buttonValue === activeTag) {
             buttonEl.classList.add("active");
         } else {
