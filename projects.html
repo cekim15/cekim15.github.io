@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects &mdash; Christina Kim</title>
+    <script>
+        (function () {
+            var t = localStorage.getItem('theme');
+            if (!t) {
+                t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            document.documentElement.setAttribute('data-theme', t);
+        })();
+    </script>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">Christina Kim</a>
+            <div class="nav-right">
+                <nav class="nav-links">
+                    <a href="index.html">about me</a>
+                    <a href="workexperience.html">work experience</a>
+                    <a class="active" href="projects.html">projects</a>
+                </nav>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    <div class="page-header">
+        <h1>Projects</h1>
+    </div>
+
+    <div class="filters">
+        <span class="filter-label">Filters:</span>
+        <button onclick="filterProjects('webdesign')" data-value="webdesign">web design</button>
+        <button onclick="filterProjects('fullstack')" data-value="fullstack">full stack</button>
+        <button onclick="filterProjects('appdev')" data-value="appdev">app development</button>
+        <button onclick="filterProjects('mobile')" data-value="mobile">mobile</button>
+        <button onclick="filterProjects('android')" data-value="android">Android</button>
+        <button onclick="filterProjects('machinelearning')" data-value="machinelearning">machine learning</button>
+        <button onclick="filterProjects('games')" data-value="games">games</button>
+        <button onclick="filterProjects('microcontrollers')" data-value="microcontrollers">microcontrollers</button>
+    </div>
+
+    <div class="sort-controls">
+        <span class="sort-label">Sort:</span>
+        <button onclick="sortProjects('newest')" id="sort-newest" class="sort-btn active">newest to oldest</button>
+        <button onclick="sortProjects('oldest')" id="sort-oldest" class="sort-btn">oldest to newest</button>
+    </div>
+
+    <div class="projects-container">
+    <div class="project-card" data-tags="webdesign fullstack">
+        <h2 class="project-title">Team Hearing</h2>
+        <p class="project-date">August 2025 – December 2025</p>
+
+        <div class="project-tags">
+            <span class="tag" data-value="webdesign" onclick="filterProjects('webdesign')">web design</span>
+            <span class="tag" data-value="fullstack" onclick="filterProjects('fullstack')">full stack</span>
+        </div>
+
+        <!-- Optional: Add project image -->
+        <!-- <div class="project-image">
+            <img src="path/to/image.jpg" alt="Team Hearing screenshot">
+        </div> -->
+
+        <!-- Optional: Add YouTube video -->
+        <!-- <div class="project-media">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+        </div> -->
+
+        <p><strong>Languages:</strong> Java, Typescript, SQL</p>
+        <p><strong>Tools / Frameworks:</strong> d3.js, React, Springboot, Git</p>
+
+        <p class="project-description">
+            For this project, a team and I worked with USC’s Bionic Ear Lab as full stack developers. We
+            built a web-based application intended to assess music
+            perception in cochlear implant users using various modules
+            like pitch resolution, word identification, etc.
+        </p>
+    </div>
+
+    <div class="project-card" data-tags="appdev mobile android fullstack">
+        <h2 class="project-title">USC Tree Hole</h2>
+        <p class="project-date">October 2024 – December 2024</p>
+
+        <div class="project-tags">
+            <span class="tag" data-value="appdev" onclick="filterProjects('appdev')">app development</span>
+            <span class="tag" data-value="mobile" onclick="filterProjects('mobile')">mobile</span>
+            <span class="tag" data-value="android" onclick="filterProjects('android')">Android</span>
+            <span class="tag" data-value="fullstack" onclick="filterProjects('fullstack')">full stack</span>
+        </div>
+
+        <!-- Optional: Add project image -->
+        <!-- <div class="project-image">
+            <img src="path/to/image.jpg" alt="USC Tree Hole screenshot">
+        </div> -->
+
+        <!-- Optional: Add YouTube video -->
+        <!-- <div class="project-media">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+        </div> -->
+
+        <p><strong>Languages:</strong> Java, XML</p>
+        <p><strong>Tools / Frameworks:</strong> Android Studio, Firebase, JUnit, Espresso, Git</p>
+
+        <p class="project-description">
+            An anonymous discussion platform for USC students.
+        </p>
+    </div>
+
+    <div class="project-card" data-tags="machinelearning">
+        <h2 class="project-title">Tumor Classification</h2>
+        <p class="project-date">November 2024</p>
+
+        <div class="project-tags">
+            <span class="tag" data-value="machinelearning" onclick="filterProjects('machinelearning')">machine learning</span>
+        </div>
+
+        <!-- Optional: Add project image -->
+        <!-- <div class="project-image">
+            <img src="path/to/image.jpg" alt="Tumor Classification visualization">
+        </div> -->
+
+        <!-- Optional: Add YouTube video -->
+        <!-- <div class="project-media">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+        </div> -->
+
+        <p><strong>Languages:</strong> Python</p>
+        <p><strong>Tools / Frameworks:</strong> scikit-learn</p>
+
+        <p class="project-description">
+            A machine learning pipeline in Python (including data preprocessing, feature binarization, model training, and evaluation) used to build predictive classification models
+            from RNA-expression data in order to identify five types of tumors and evaluate their performance.
+        </p>
+    </div>
+    
+    <div class="project-card" data-tags="games">
+        <h2 class="project-title">Portal 2</h2>
+        <p class="project-date">March 2026 – April 2026</p>
+
+        <div class="project-tags">
+            <span class="tag" data-value="games" onclick="filterProjects('games')">games</span>
+        </div>
+
+        <!-- Optional: Add project image -->
+        <!-- <div class="project-image">
+            <img src="path/to/image.jpg" alt="Team Hearing screenshot">
+        </div> -->
+
+        <!-- Optional: Add YouTube video -->
+        <!-- <div class="project-media">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+        </div> -->
+
+        <p><strong>Languages:</strong> C++ </p>
+        <p><strong>Tools / Frameworks:</strong> CLion, OpenGL</p>
+
+        <p class="project-description">
+            Portal 2
+        </p>
+    </div>
+
+    <div class="project-card" data-tags="microcontrollers">
+        <h2 class="project-title">Tomato Car</h2>
+        <p class="project-date">March 2026</p>
+
+        <div class="project-tags">
+            <span class="tag" data-value="microcontrollers" onclick="filterProjects('microcontrollers')">microcontrollers</span>
+        </div>
+
+        <!-- Optional: Add project image -->
+        <!-- <div class="project-image">
+            <img src="path/to/image.jpg" alt="Team Hearing screenshot">
+        </div> -->
+
+        <div class="project-media">
+            <iframe src="https://www.youtube-nocookie.com/embed/VQXI6DczweY" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <p><strong>Languages:</strong> C++ </p>
+        <p><strong>Tools / Frameworks:</strong> Bluefruit </p>
+
+        <p class="project-description">
+            A remote control car.
+        </p>
+    </div>
+
+    <div class="project-card" data-tags="microcontrollers">
+        <h2 class="project-title">Smart Pill Box</h2>
+        <p class="project-date">April 2026 – May 2026</p>
+
+        <div class="project-tags">
+            <span class="tag" data-value="microcontrollers" onclick="filterProjects('microcontrollers')">microcontrollers</span>
+        </div>
+
+        <!-- Optional: Add project image -->
+        <!-- <div class="project-image">
+            <img src="path/to/image.jpg" alt="Team Hearing screenshot">
+        </div> -->
+
+        <div class="project-media">
+            <iframe src="https://www.youtube-nocookie.com/embed/VQXI6DczweY" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <p><strong>Languages:</strong> C++ </p>
+        <p><strong>Tools / Frameworks:</strong> Bluefruit </p>
+
+        <p class="project-description">
+            A smart pill box that reminds users to take their medication.
+        </p>
+    </div>
+
+    </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 Christina Kim</p>
+            <div class="footer-links">
+                <a href="https://github.com/cekim15" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.113.793-.26.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.565 21.796 24 17.298 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/christina-eun-kim/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.881 3.87 6 2.5 6S0 4.881 0 3.5 1.12 1 2.5 1 4.98 2.119 4.98 3.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.83v1.98h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.5c0-1.55-.03-3.55-2.16-3.55-2.16 0-2.49 1.69-2.49 3.44V23h-4V8.5z"/></svg>
+                </a>
+                <a href="mailto:christina.kkiimm@gmail.com" data-copy="christina.kkiimm@gmail.com" aria-label="Email">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="site.js"></script>
+    <script src="projects.js"></script>
+</body>
+</html>
